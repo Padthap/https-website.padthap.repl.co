@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kometi bot</title>
+</head>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1)
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+table, th, td {
+  border: 1px solid black;
+}
+nav{
+  width: 80%;
+  position: sticky;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  flex-basis: 20%;
+}
+nav{
+  flex-basis: 20%;
+}
+.logo img{
+  width: 150px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-links ul li a{
+  color: #000000;
+  text-decoration: none;
+} 
+body {
+  background: linear-gradient(to right, #ddd6f3, #faaca8)
+}
+</style>
+</head>
+
+
+<body>
+    <nav>
+      <div class="logo">
+        <img src="https://cdn.discordapp.com/attachments/815571227820949544/815932956556132412/test.png" style="width:84;height:84px;">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="https://website.padthap.repl.co/">Home</a></li>
+          <li><a href="https://website.padthap.repl.co/command">Commands</a></li>
+        <li><a href="https://website.padthap.repl.co/about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+</body>
+<body>
+
+<h1>Kometi bot</h1>
+<h3>Moderation‼️ & message💬</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands	</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>ban @member</td>
+    <td>This command bans a member</td>
+    <td>Perms of ban members</td>
+  </tr>
+  <tr>
+    <td>kick @member</td>
+    <td>This command kicks a member</td>
+    <td>Perms of kick members</td>
+  </tr>
+  <tr>
+    <td>unban  @member</td>
+    <td>This command unbans a member</td>
+    <td>Perms of ban members</td>
+  </tr>
+  <tr>
+    <td>Nuke #channels</td>
+    <td>This command deletes mentioned channel<br>and clone it with same perms</td>
+    <td>Perms of manage channels</td>
+  </tr>
+  <tr>
+    <td>purge [no. of message]</td>
+    <td>This command deletes no. of message mentioned</td>
+    <td>Perms of manage messages</td>
+  </tr>
+  <tr>
+    <td>lock/unlock #channel</td>
+    <td>This command makes normal perms people<br>able/unable to send message in mentioned channel</td>
+    <td>Perms of manage channel</td>
+  </tr>
+</table>
+<h3>Music🎵</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands	</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>summon [#channel]</td>
+    <td>This command summons bot to mentioned channel<br>when you are not in channel</td>
+    <td>Perms of manage guild</td>
+  </tr>
+  <tr>
+    <td>leave</td>
+    <td>This command makes bot to leave the channel</td>
+    <td>Has to be one who made bot join the channel</td>
+  </tr>
+  <tr>
+    <td>play <br>[url/name of song]</td>
+    <td>This command plays on the vc in which you and bot are in.</td>
+    <td>Has to be one who made bot join the channel</td>
+  </tr>
+  <tr>
+    <td>leave</td>
+    <td>this command leaves the current vc</td>
+    <td>Has to be one who made bot to join vc</td>
+  </tr>
+  <tr>
+    <td>pause</td>
+    <td>this command pauses the current song</td>
+    <td>Has to be one who played the song</td>
+  </tr>
+  <tr>
+    <td>resume</td>
+    <td>this command resumes the pause song</td>
+    <td>Has to be one who paused the song</td>
+  </tr>
+  <tr>
+    <td>stop</td>
+    <td>this command stop the current song</td>
+    <td>Has to be one who played the song</td>
+  </tr>
+  <tr>
+    <td>skip</td>
+    <td>this command skips the current song</td>
+    <td>Has to be one who played the song</td>
+  </tr>
+  <tr>
+    <td>queue</td>
+    <td>this command shows queue songs</td>
+    <td>Has to be one who played the current song</td>
+  </tr>  
+  <tr>
+    <td>shuffle</td>
+    <td>this command shuffles the queue</td>
+    <td>Has to be one who played the song</td>
+  </tr>
+  <tr>
+    <td>now</td>
+    <td>this command shows the current playing song</td>
+    <td>anyone in the VC</td>
+  </tr>
+  <tr>
+    <td>remove</td>
+    <td>this command removes a song from the queue</td>
+    <td>Has to be one who added the song to the queue</td>
+  </tr>
+  <tr>
+    <td>loop</td>
+    <td>this command loops the current song</td>
+    <td>Has to be one who played the current song</td>
+  </tr>
+</table>
+<h3>Fun😁</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands	</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>meme</td>
+    <td>This command sends random memes</td>
+    <td>No permitions needed</td>
+  </tr>
+  <tr>
+    <td>joke </td>
+    <td>This command shows a random joke</td>
+    <td>No permitions needed </td>
+  </tr>
+  <tr>
+    <td>dog</td>
+    <td>This command shows a random dog pic</td>
+    <td>No permitions needed </td>
+  </tr>
+  <tr>
+    <td>cat</td>
+    <td>This command shows a random cat pic</td>
+    <td>No permitions needed</td>
+  </tr>
+  <tr>
+    <td>coinflip [heads/tails]</td>
+    <td>This command flips a coin for heads or tails</td>
+    <td>No permitions needed</td>
+  </tr>
+</table>
+<h3>Economy💸</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands	</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>bal @member</td>
+    <td>This command shows your/member balance</td>
+    <td>No permitions needed</td>
+  </tr>
+  <tr>
+    <td>beg</td>
+    <td>This command gives your random money</td>
+    <td>No permitions needed </td>
+  </tr>
+  <tr>
+    <td>pay [@member] [amount]</td>
+    <td>This command gives amount mentioned to the member</td>
+    <td>You need to have the amount</td>
+  </tr>
+  <tr>
+    <td>dep [amount]</td>
+    <td>This command diposits amout mentioned in bank</td>
+    <td>You need to have the amount</td>
+  </tr>
+  <tr>
+    <td>withdraw [amount]</td>
+    <td>This command withdraws amout mentioned in bank</td>
+    <td>You need to have the amount</td>
+  </tr>
+</table>
+<h3>Giveaway🎉</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>gstart [mins] [prize]</td>
+    <td>This command starts giveaway </td>
+    <td>Perms to view audit log</td>
+  </tr>
+  <tr>
+    <td>giveaway<br>[ans. all the ques.]</td>
+    <td>This command starts giveaway in mentioned channel</td>
+    <td>Perms to view audit log</td>
+  </tr>
+  <tr>
+    <td>reroll [channel]<br>[giveaway message id]</td>
+    <td>This command rerolls giveaway winner</td>
+    <td>Perms to view audit log</td>
+  </tr>
+</table>
+<h3>Utility👷</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>info</td>
+    <td>This command gives info about kometi and owner </td>
+    <td>No perms needed</td>
+  </tr>
+  <tr>
+    <td>invite</td>
+    <td>This command sends bot's invite link<br>and help server's link</td>
+    <td>No perms needed</td>
+  </tr>
+  <tr>
+    <td>website</td>
+    <td>This command gives you this website's link</td>
+    <td>No perms needed</td>
+  </tr>
+</table>
+<h3>Useful commands🧭</h3>
+<table style="width:75%">
+  <tr>
+    <th>Commands</th>
+    <th>Work</th> 
+    <th>Requirement</th>
+  </tr>
+  <tr>
+    <td>avatar [@member] </td>
+    <td>This command shows your/member's avatar </td>
+    <td>No perms needed</td>
+  </tr>
+  <tr>
+    <td>serverinfo</td>
+    <td>This command gives you info of any server</td>
+    <td>No perms needed</td>
+  </tr>
+  <tr>
+    <td>userinfo [@member] </td>
+    <td>This command gives user's info</td>
+    <td>No perms needed</td>
+  </tr>
+</table>
+<a href="/command/nsfw"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWVhvNrMiLD2eg7ZCV8fNYHWYpwEvplQDVpA&usqp=CAU" alt="NSFW" style="width:69px;height:69px;"></a>
+<h3>The above button leads you to nsfw commands stay on your risks</h3>
+
+
+</body>
+</html>
+
+</body>
+</html>

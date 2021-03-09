@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kometi bot</title>
+  <link ref="stylesheet" href="style.css">
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ec6f66, #f3a183)
+}
+.test{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ec6f66, #f3a183)
+}
+nav{
+  width: 80%;
+  position: sticky;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  flex-basis: 20%;
+}
+nav{
+  flex-basis: 20%;
+}
+.logo img{
+  width: 150px;
+
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.text{
+  color: #ffdde1;
+  text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+nav ul li:hover {
+    color: black;
+
+    background-color: black;
+}
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+</style>
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+        <img src="https://cdn.discordapp.com/attachments/815571227820949544/815932956556132412/test.png" style="width:84;height:84px;">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="https://website.padthap.repl.co/">Home</a></li>
+          <li><a href="https://website.padthap.repl.co/command">Commands</a></li>
+        <li><a href="https://website.padthap.repl.co/about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text">
+      <h1>Kometi bot!</h1>
+      <p id="home-hero-text-slogan">Increase your server's activity easily with Discord's favorite fun bot.</p>
+      <h3><br><br>👇👇Add Kometi to your server now!</h3>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=810499533653016608&permissions=8&scope=bot"><img src="https://www.pngfind.com/pngs/m/169-1699926_user-plus-user-user-add-profile-add-profile.png" style="width:42px;height:42px;"></a>
+      <h3><br>still not accord to add the bot?</h3>
+      <h1>Have some pics of our commands:<br></h1>
+      <img src="https://cdn.discordapp.com/attachments/811782491982659614/815203810079145994/unknown.png" overflow-y: scroll; style="width:226px;height:226px; style="width:100%" >
+      <h2>Moderation commands<br></h2>
+      <h3>bot contains a lot of moderation commands in the bot<br></h3>
+      <a href="https://website.padthap.repl.co/command">See all commands here!</a>
+</div>
+</div>
+<div class="test">  
+  <img src="https://cdn.discordapp.com/attachments/811782491982659614/815204282587676693/unknown.png" style="width:226px;height:226px;" style="width:100%">
+
+  <h2>Economy commands<br></h2>
+
+  <img src="https://cdn.discordapp.com/attachments/811782491982659614/815205456254599168/unknown.png" style="width:226px;height:226px;" alt="Economy" style="width:100%">
+
+  <h2>Fun commands<br></h2>
+
+  <img src="https://cdn.discordapp.com/attachments/811782491982659614/815205596155871263/unknown.png" style="width:226px;height:226px;" alt="Economy" style="width:100%">
+
+  <h2>Big bois have fun becauz kometi bot has NSFW commands<br></h2>
+  <a href="https://website.padthap.repl.co/command">And many more available here!</a>
+  
+</div>
+
+</body>
+
+</html>
